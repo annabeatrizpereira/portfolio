@@ -1,0 +1,255 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #22212C;
+    --sections: #302F3D;
+    --purple: #837E9F;
+    --green: #00FF00;
+    --pink: #CB92B1;
+    --yellow: #E7DE79;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--purple);
+
+    margin-bottom: 58px;
+    padding: 40px;
+
+    font-family: 'Merriwheather Sans', sans-serif;
+
+    display: flex;
+    gap: 60px;
+}
+
+header, article, section {
+    background-color: var(--sections);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* titles */
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+
+    margin: 30px 0 10px 0;
+}
+
+header p {
+    font-size: .8em;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.languages {
+    font-weight: bold;
+    font-size: .7em;
+}
+
+ul li {
+    font-size: .875em;
+    font-weight: bold;
+}
+
+ul li p {
+    font-weight: normal;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.posts span {
+    font-size: .8em;
+}
+
+/* links and buttons */
+a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+header {
+    height: 18.95rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    height: 8rem;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+}
+
+/* aside */
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#about {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#about span, #about a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    font-size: .75em;
+}
+
+.svg {
+    margin: 0 20px;
+}
+
+#tecnologies {
+    padding: 20px;
+}
+
+#box-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 10px 10px;
+}
+
+.languages {
+    background-color: var(--pink);
+    color: black;
+    border-radius: 30px;
+    width: 5.375rem;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#experiences {
+    padding: 20px;
+}
+
+#list-experiences, #list-education {
+    padding: 10px 40px;
+}
+
+#education {
+    padding: 20px;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+}
+
+#box-projects {
+    display: flex;
+    gap: 30px;
+}
+
+#box-projects .project {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    padding: 30px;
+}
+
+.project div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.yellow-circle {
+    background-color: var(--yellow);
+    border: solid 2px var(--purple);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+#post {
+    padding: 30px;
+}
+
+.posts {
+    padding: 30px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.posts img {
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.posts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.posts p span {
+    margin-right: 10px;
+}
+/* footer */
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
